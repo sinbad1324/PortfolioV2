@@ -1,0 +1,62 @@
+@import "tailwindcss";
+/* *{
+     font-family: "Inter", sans-serif;
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+    /*fonts*/
+    --font-base:"Libre Baskerville", serif;
+    --font-vsCode:"Consolas,monaco,monospace";
+    --color-l-accent-1: oklch(99.3% 0.0048 194.8);
+    --color-l-accent-2: oklch(98.2% 0.0093 194.8);
+    --color-l-accent-3: oklch(96% 0.0276 194.8);
+    --color-l-accent-4: oklch(93.3% 0.0433 194.8);
+    --color-l-accent-5: oklch(89.9% 0.056 194.8);
+    --color-l-accent-6: oklch(85.6% 0.0662 194.8);
+    --color-l-accent-7: oklch(79.8% 0.0782 194.8);
+    --color-l-accent-8: oklch(72.2% 0.0983 194.8);
+    --color-l-accent-9: oklch(52.5% 0.0896 194.8);
+    --color-l-accent-10: oklch(47.7% 0.0896 194.8);
+    --color-l-accent-11: oklch(51.3% 0.0896 194.8);
+    --color-l-accent-12: oklch(34.8% 0.0468 194.8);
+
+    --color-l-gray-1: oklch(99.1% 0 none);
+    --color-l-gray-2: oklch(98.2% 0 none);
+    --color-l-gray-3: oklch(95.5% 0 none);
+    --color-l-gray-4: oklch(93.1% 0 none);
+    --color-l-gray-5: oklch(90.9% 0 none);
+    --color-l-gray-6: oklch(88.5% 0 none);
+    --color-l-gray-7: oklch(85.2% 0 none);
+    --color-l-gray-8: oklch(79.3% 0 none);
+    --color-l-gray-9: oklch(64.5% 0 none);
+    --color-l-gray-10: oklch(61% 0 none);
+    --color-l-gray-11: oklch(50.4% 0 none);
+    --color-l-gray-12: oklch(24.4% 0 none);
+
+    --color-d-accent-1: oklch(0% 0.0127 194.8);
+    --color-d-accent-2: oklch(18.5% 0.0174 194.8);
+    --color-d-accent-3: oklch(25.8% 0.0391 194.8);
+    --color-d-accent-4: oklch(30.9% 0.0564 194.8);
+    --color-d-accent-5: oklch(35.8% 0.0621 194.8);
+    --color-d-accent-6: oklch(41.1% 0.0675 194.8);
+    --color-d-accent-7: oklch(47.2% 0.0764 194.8);
+    --color-d-accent-8: oklch(53.8% 0.0896 194.8);
+    --color-d-accent-9: oklch(52.5% 0.0896 194.8);
+    --color-d-accent-10: oklch(47.7% 0.0764 194.8);
+    --color-d-accent-11: oklch(78.9% 0.0896 194.8);
+    --color-d-accent-12: oklch(90.5% 0.0746 194.8);
+
+    --color-d-gray-1: oklch(0% 0 none);
+    --color-d-gray-2: oklch(18.2% 0 none);
+    --color-d-gray-3: oklch(23.8% 0 none);
+    --color-d-gray-4: oklch(27.4% 0 none);
+    --color-d-gray-5: oklch(30.7% 0 none);
+    --color-d-gray-6: oklch(34.6% 0 none);
+    --color-d-gray-7: oklch(39.9% 0 none);
+    --color-d-gray-8: oklch(48.8% 0 none);
+    --color-d-gray-9: oklch(53.5% 0 none);
+    --color-d-gray-10: oklch(58.1% 0 none);
+    --color-d-gray-11: oklch(76.8% 0 none);
+    --color-d-gray-12: oklch(94.8% 0 none);
+}

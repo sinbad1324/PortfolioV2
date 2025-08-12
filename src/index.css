@@ -1,0 +1,19 @@
+.mask {
+  -webkit-mask-image: url("./assets/pentagon.svg");
+  mask-image: url("./assets/pentagon.svg");
+  mask-position: top;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+}
+
+
+.rootMain {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows:
+     minmax(110vh, auto)
+    minmax(70vh, auto)
+    minmax(20vh, auto)
+    minmax(20vh, auto)
+    minmax(20vh, auto);
+}
