@@ -3,15 +3,12 @@ import { useTheme } from '../../contexts/themeContext'
 import { Line } from '../style/line'
 import CadreDeco from '../../assets/Cadre.svg?react'
 import CadreDecoLight from '../../assets/CadreLight.svg?react'
-
 import CadreMobile from '../../assets/CadreMobile.svg?react'
 import CadreMobileLight from '../../assets/CadreMobileLight.svg?react'
-
 import CVBtn from "./../../assets/CVBtn.svg?react"
 import CVBtnLight from "./../../assets/CVBtnLight.svg?react"
 import TraitLight from '../../assets/traitAboutMeLight.svg?react'
 import Trait from '../../assets/traitAboutMe.svg?react'
-import { ScrollTo } from '../../utils/scollTo'
 import { useEffect, useState } from 'react'
 const iconClassName = "max-w-[200px] w-[20vw] h-auto cursor-pointer"
 const TealText = ({ children }) => {
@@ -23,9 +20,9 @@ export const About = ({ }) => {
 
     return <section
         id='About'
-        className=" overflow-hidden shrink-0  relative flex flex-col  justify-center items-center w-full h-fit gap-30  mr-1.5"
+        className=" overflow-hidden shrink-0  relative flex flex-col  justify-center items-center w-full h-fit gap-30 pt-[100px] mr-1.5"
     >
-        <div className='w-full h-fit flex flex-col gap-20 lg:flex-row justify-around items-center dark:text-white text-md md:text-lg pt-20'>
+        <div className='relative w-full h-fit flex flex-col gap-20 lg:flex-row justify-around items-center dark:text-white text-md md:text-lg pt-20'>
             <div className='w-fit h-fit relative '>
                 <img src={moi} alt="deuxime photo de mohammad" className=' rounded-sm  w-[60vw] md:w-[40vw] h-auto max-w-[500px]' />
                 <CadreMobile className="absolute top-0 left-0 w-full h-full scale-[1.22] lg:hidden" />
