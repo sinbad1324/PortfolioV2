@@ -21,8 +21,8 @@ export const Skills = ({ }) => {
         className=" shrink-0 relative flex flex-col  justify-between items-center w-full h-fit gap-30 overflow-hidden "
     >
         <div className='z-20 w-full h-fit flex flex-col  justify-start items-center text-black dark:text-white pt-[20px] md:pt-[40px] lg:pt-[70px] gap-30 md:gap-72'>
-            <h2 className='text-6xl md:text-9xl font-bold' >My Skills</h2>
-            <ul className="lg:w-[80%] w-full p-5 h-fit flex flex-row flex-wrap justify-center items-center gap-15 shrink-0">
+            <h2 className='txl:text-8xl md:text-6xl text-5xl font-bold ' >My Skills</h2>
+            <ul className="lg:w-[70%] max-w-[1150px] w-full p-5 h-fit flex flex-row flex-wrap justify-center items-center gap-15 shrink-0">
                 {
                     [
                         { logo: <ReactIcon />, title: "React" },

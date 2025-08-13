@@ -33,7 +33,7 @@ export const About = ({ }) => {
             </div>
             <div className='flex flex-col w-2/3 lg:w-2/5 items-center justify-start xl:gap-[200px] gap-[70px] lg:gap-[100px] '>
                 <div className=' relative w-fit flex flex-col justify-center items-center'>
-                    <h2 className='xl:text-8xl font-semibold text-6xl'>About Me</h2>
+                    <h2 className='xl:text-8xl md:text-6xl text-5xl font-bold '>About Me</h2>
                     {
                         theme == "dark" ?
                             <Trait className="w-full h-auto" /> : <TraitLight className="w-full h-auto" />

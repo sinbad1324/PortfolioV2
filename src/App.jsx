@@ -11,6 +11,8 @@ import { Home } from './components/layout/home'
 import { About } from './components/layout/About'
 import { Skills } from './components/layout/skills'
 import { Project } from './components/layout/projects'
+import { Contact } from './components/layout/contact'
+import { Footer } from './components/layout/footer'
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
         <About></About>
         <Skills></Skills>
         <Project></Project>
+        <Contact></Contact>
+        <Footer></Footer>
       </main>
       <div className="fixed bottom-0 ml-2 mb-2  text-2xl text-white font-bold">
         <span className="md:hidden sm:visible">sm</span>

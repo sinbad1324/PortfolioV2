@@ -1,29 +1,28 @@
 import { PrimaryButton } from "./buttons/primaryButtons"
 import Arrow from "../assets/Arrow.svg?react"
-export const ProjectBlock = ({ img, title, descriptions }) => {
-
+export const ProjectBlock = ({ img, title, descriptions }) => {    
     return <div className=" min-w-[300px]  group xl:w-[70%] md:w-[90%] w-[95%] h-fit overflow-hidden rounded-xl relative">
-        <img src={img} className=" min-h-[200px] w-full h-auto " alt="" />
-        <h3 className=" hidden md:block absolute top-3 left-4 text-3xl font-semibold backdrop-blur-2xl bg-black/20 text-white dark:text-black p-0.5 pl-1 pr-1 dark:bg-white/20 rounded-[5px]">{title}</h3>
-        <div className=" absolute bottom-[20px]  left-0 w-full h-fit flex flex-row justify-center gap-20 p-3">
-            <Box description={descriptions[0]} />
-            <Box description={descriptions[1]} />
-        </div>
-        <div className=" md:opacity-0 flex flex-col p-5 justify-between  absolute top-0  left-0 w-full h-full bg-stone-900/50  backdrop-blur-[3px] rounded-xl text-[16px] dark:text-white">
-            <h3 className="text-3xl font-semibold">{title}</h3>
-
-            <div className="w-full flex flex-row justify-end">
-                <PrimaryButton text={"See Project"} className={"max-w-[120px] h-[40px] text-sm "}> </PrimaryButton>
+        <img src={img} className="  w-full h-auto " alt="" />
+        <div className=" absolute top-0 left-0 w-full h-full flex flex-col justify-between items-center p-1">
+            <div className="relative flex flex-row p-5 justify-start w-full h-fits">
+                <h3 className=" z-30  text-3xl font-semibold backdrop-blur-2xl bg-black/20 text-white dark:text-black p-0.5 pl-1 pr-1 dark:bg-white/20 rounded-[5px]">{title}</h3>
+            </div>
+            <div className="  hidden md:flex relative w-full h-fit  flex-row justify-center gap-20 p-2">
+                <Box>{descriptions[0]}</Box>
+                <Box>{descriptions[1]}</Box>
+            </div>
+            <div className=" relative flex flex-row justify-end w-full h-fits text-[16px] dark:text-white">
+                <PrimaryButton text={"See Project"} className={"max-w-[320px] h-[40px] text-sm "}><Arrow className="hidden md:block w-[40px] -rotate-90" /></PrimaryButton>
             </div>
         </div>
     </div>
 }
 
 
-const Box = ({ descriptions }) => {
-    return <div className=" hidden md:block max-w-[368px] w-[50%] min-w-[150px] h-[215px] bg-stone-900/30  backdrop-blur-[23px] rounded-xl text-[16px] dark:text-white p-3 ">
+const Box = ({ children }) => {
+    return <div className=" hidden md:block max-w-[368px] w-[50%] min-w-[150px] h-[190px] lg:h-[215px] bg-stone-900/30  backdrop-blur-[23px] rounded-xl text-[16px] dark:text-white p-3 ">
         <p>
-            descriptions        
+            {children}
         </p>
     </div>
 }
