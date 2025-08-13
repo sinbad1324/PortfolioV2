@@ -3,25 +3,23 @@ import { PrimaryButton } from '../buttons/primaryButtons'
 import { CreateForm } from '../createFromes'
 import { Line } from '../style/line'
 import { useEffect, useRef } from 'react'
-
-const TealText = ({ children }) => {
-    return <span className='dark:text-d-accent-11 text-l-accent-11 font-base'>{children}</span>
-}
+import { useLangContext } from "../../contexts/langContext";
+import { GetLang } from '../../utils/getCurrentLang'
 
 export const Contact = ({ }) => {
+    const { Lang } = useLangContext();
+    const currentLang = GetLang(Lang)
     const { theme } = useTheme()
     const FormsContainer = useRef()
     return <section
         id='Contact'
         className=" shrink-0 relative flex flex-col  justify-between items-center w-full h-fit gap-20 md:gap-30 overflow-hidden dark:text-white pt-20"
     >
-        <h2 className='relative z-10 font-bold dark:text-white  xl:text-8xl md:text-6xl text-5xl '>Contact</h2>
+        <h2 className='relative z-10 font-bold dark:text-white  xl:text-8xl md:text-6xl text-5xl '>{currentLang.header[4]}</h2>
         <div className='z-10 w-full h-fit flex flex-col lg:flex-row justify-around p-5'>
             <div className='lg:w-1/2 w-full flex flex-col justify-start items-center lg:items-start gap-2'>
-                <h3 className='dark:text-d-accent-11 text-l-accent-11 text-4xl md:text-6xl lg:text-5xl xl:text-7xl font-bold'>Do you need help?</h3>
-                <p className='md:font-bold font-semibold dark:text-d-gray-11 text-l-gray-11 text-sm md:text-xl'>
-                    Contact me via the <TealText>social networks</TealText> or send me an <TealText>email</TealText>.
-                </p>
+                <h3 className='dark:text-d-accent-11 text-l-accent-11 text-4xl md:text-6xl lg:text-5xl xl:text-7xl font-bold'>{currentLang.contact.paragraphes.h3}</h3>
+                <p className='md:font-bold font-semibold dark:text-d-gray-11 text-l-gray-11 text-sm md:text-xl' dangerouslySetInnerHTML={{__html:currentLang.contact.paragraphes.p}}></p>
             </div>
             <div className='lg:w-1/2 w-full '>
                 <form action="" className='w-full h-full flex flex-col justify-start items-start gap-4'>
@@ -40,10 +38,10 @@ export const Contact = ({ }) => {
                     </div>
                     <div className='w-full flex flex-row justify-between items-center gap-2'>
                         <div className='w-fit h-fit flex flex-row gap-1'>
-                            <MailIcon/>
+                            <MailIcon />
                             <a href="mailto:mohammad@mohaizad.com" className='dark:text-d-accent-12 text-l-accent-12 underline text-sm md:text-md'>mohammad@mohaizad.com</a>
                         </div>
-                        <PrimaryButton className="md:w-[120px]  w-[100px] font-light text-lg " >Send</PrimaryButton>
+                        <PrimaryButton className="md:w-[120px]  w-[100px] font-light text-lg " >{currentLang.contact.paragraphes.btn}</PrimaryButton>
                     </div>
                 </form>
             </div>
@@ -65,5 +63,5 @@ export const Contact = ({ }) => {
 
 const MailIcon = () => {
     const { theme } = useTheme();
-    return <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke={theme=="dark"?"#a4f0ef":"#174241"}  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+    return <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke={theme == "dark" ? "#a4f0ef" : "#174241"} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"  ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
 }

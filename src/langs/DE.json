@@ -1,0 +1,42 @@
+{
+    "header": [
+        "Startseite",
+        "Über mich",
+        "Fähigkeiten",
+        "Projekte",
+        "Kontakt"
+    ],
+    "home": {
+        "paragraphes": [
+            "Hey, ich bin Mohammad",
+            ["Webentwickler", "fortgeschritten"],
+            ["mit Fachwissen in Spitzentechnologien wie", "und", "Ich biete", "Weblösungen, die sowohl innovativ als auch robust sind"]
+        ]
+    },
+    "about": {
+        "paragraphes": [
+            "Ich heiße <strong class='dark:text-d-accent-11 text-l-accent-11'>Izaspanah Mohammad</strong> und bin leidenschaftlich an <strong class='dark:text-d-accent-11 text-l-accent-11'>Programmierung</strong> interessiert. Obwohl sich meine derzeitige Expertise auf die <strong class='dark:text-d-accent-11 text-l-accent-11'>Webentwicklung</strong> <strong class='dark:text-d-accent-11 text-l-accent-11'>konzentriert</strong>, interessiere ich mich sehr für maschinelles Lernen, ein Bereich, in dem ich in Zukunft arbeiten möchte.",
+            "Derzeit studiere ich Informatik mit Schwerpunkt <strong class='dark:text-d-accent-11 text-l-accent-11'>Programmierung</strong> und habe bereits zwei Jahre praktische Erfahrung in der <strong class='dark:text-d-accent-11 text-l-accent-11'>Webentwicklung</strong> gesammelt. Diese Erfahrung hat es mir ermöglicht, meine <strong class='dark:text-d-accent-11 text-l-accent-11'>technischen Fähigkeiten</strong> zu <strong class='dark:text-d-accent-11 text-l-accent-11'>stärken</strong>, meine Kreativität zu verbessern und einen methodischen Ansatz zur Problemlösung zu entwickeln.",
+            "Mit nur 18 Jahren bin ich eine motivierte, schnelle und effiziente Person in meiner Arbeit. Ich bin immer bereit, neue Herausforderungen anzunehmen, zu lernen und mich zu verbessern, um in jedem Projekt mein Bestes zu geben."
+        ]
+    },
+    "Project": {
+        "list": [
+            {
+                "descripton": "SpriteSort ist eine Website, die Ihre Sprites automatisch nach Kategorien in 2x2-, 4x4- oder 8x8-Rastern organisiert. Sie können Ihre Bilder auch als JSON-Datei für Ihre Videospiele exportieren.",
+                "idee": "SpriteSort ermöglicht es Ihnen, die Entwicklung Ihres Spiels oder die Erstellung visueller Effekte (VFX) zu beschleunigen. Es sortiert alle Ihre Bilder in die richtigen Ordner, damit Sie sie leichter wiederfinden."
+            }
+        ],
+        "btn": "Projekt ansehen"
+    },
+    "contact": {
+        "paragraphes": {
+            "h3": "Bereit, Ihre Ideen zum Leben zu erwecken?",
+            "p": "Kontaktieren Sie mich über die <strong class='dark:text-d-accent-11 text-l-accent-11'>sozialen Netzwerke</strong> oder senden Sie mir eine <strong class='dark:text-d-accent-11 text-l-accent-11'>E-Mail</strong>.",
+            "btn": "Senden"
+        }
+    },
+    "footer": {
+        "text": "Entworfen mit <strong class='dark:text-white text-black'>Figma</strong> und programmiert mit <strong class='dark:text-white text-black'>VSCode</strong>"
+    }
+}

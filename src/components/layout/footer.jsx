@@ -7,9 +7,13 @@ const TealText = ({ children }) => {
 const WhiteText = ({ children }) => {
     return <span className='dark:text-white text-black '>{children}</span>
 }
+import { useLangContext } from "../../contexts/langContext";
+import { GetLang } from '../../utils/getCurrentLang'
 
 
 export const Footer = ({ }) => {
+    const { Lang } = useLangContext();
+    const currentLang = GetLang(Lang)
     const { theme } = useTheme()
     let color = theme == "dark" ? "#FFFFFF" : "#000"
 
@@ -36,9 +40,8 @@ export const Footer = ({ }) => {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" fill={color} />
                 </svg>
             </a></li>
-
         </ul>
-        <p className='dark:text-d-gray-11 text-l-gray-11 font-semibold'>Design by <WhiteText>Figma</WhiteText> and coded by <WhiteText>VSCode</WhiteText></p>
+        <p className='dark:text-d-gray-11 text-l-gray-11 font-semibold'dangerouslySetInnerHTML={{__html:currentLang.footer.text}}></p>
         <p className='dark:text-d-gray-11 text-l-gray-11 font-semibold'>&copy;2025-2026</p>
     </section>
 }

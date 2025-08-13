@@ -1,0 +1,42 @@
+{
+    "header": [
+        "الرئيسية",
+        "من أنا",
+        "المهارات",
+        "المشاريع",
+        "اتصال"
+    ],
+    "home": {
+        "paragraphes": [
+            "مرحباً، أنا محمد",
+            ["مطور ويب", "متوسط"],
+            ["بخبرة في أحدث التقنيات مثل", "و", "أقدم", "حلول ويب مبتكرة وقوية في آن واحد"]
+        ]
+    },
+    "about": {
+        "paragraphes": [
+            "اسمي <strong class='dark:text-d-accent-11 text-l-accent-11'>إيزا سبانة محمد</strong> وأنا شغوف بـ<strong class='dark:text-d-accent-11 text-l-accent-11'>البرمجة</strong>. رغم أن خبرتي الحالية <strong class='dark:text-d-accent-11 text-l-accent-11'>تركز</strong> على <strong class='dark:text-d-accent-11 text-l-accent-11'>تطوير الويب</strong>، فإنني مهتم كثيراً بتعلم الآلة، وهو مجال أطمح للعمل فيه مستقبلاً.",
+            "أنا حالياً طالب في علوم الحاسوب متخصص في <strong class='dark:text-d-accent-11 text-l-accent-11'>البرمجة</strong> ولدي بالفعل عامان من الخبرة العملية في <strong class='dark:text-d-accent-11 text-l-accent-11'>تطوير الويب</strong>. هذه التجربة مكنتني من <strong class='dark:text-d-accent-11 text-l-accent-11'>تعزيز</strong> <strong class='dark:text-d-accent-11 text-l-accent-11'>مهاراتي التقنية</strong>، وتحسين إبداعي، وتطوير أسلوب منهجي لحل المشكلات.",
+            "في سن 18 فقط، أنا شخص متحمس، سريع وفعال في عملي. أنا دائماً مستعد لمواجهة تحديات جديدة، والتعلم، والتحسن لتقديم أفضل ما لدي في كل مشروع أشارك فيه."
+        ]
+    },
+    "Project": {
+        "list": [
+            {
+                "descripton": "SpriteSort هو موقع ويب ينظم تلقائياً الصور النقطية الخاصة بك حسب الفئة في شبكات 2x2 أو 4x4 أو 8x8. يمكنك أيضاً تصدير صورك كملف JSON لألعاب الفيديو الخاصة بك.",
+                "idee": "SpriteSort يساعدك على تسريع تطوير لعبتك أو إنشاء المؤثرات البصرية (VFX). يقوم بفرز جميع صورك في المجلدات الصحيحة لسهولة الوصول إليها."
+            }
+        ],
+        "btn": "عرض المشروع"
+    },
+    "contact": {
+        "paragraphes": {
+            "h3": "هل أنت مستعد لإحياء أفكارك؟",
+            "p": "اتصل بي عبر <strong class='dark:text-d-accent-11 text-l-accent-11'>وسائل التواصل الاجتماعي</strong> أو أرسل لي <strong class='dark:text-d-accent-11 text-l-accent-11'>بريدًا إلكترونيًا</strong>.",
+            "btn": "إرسال"
+        }
+    },
+    "footer": {
+        "text": "تم التصميم باستخدام <strong class='dark:text-white text-black'>Figma</strong> وتمت البرمجة بواسطة <strong class='dark:text-white text-black'>VSCode</strong>"
+    }
+}

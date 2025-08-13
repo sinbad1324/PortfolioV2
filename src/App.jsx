@@ -20,9 +20,8 @@ function App() {
 
       <div className=' -z-100 absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b dark:from-d-accent-3 from-transparent to-transparent'>
       </div>
-      <div className='h-[2000px]'></div>
       <Header></Header>
-      <main className='  w-full h-full absolute top-0 left-0 flex flex-col justify-start items-center shrink-0 '>
+      <main className='  w-full h-full absolute top-0 left-0 flex flex-col justify-start items-center shrink-0  pt-[70px]'>
         <Home></Home>
         <About></About>
         <Skills></Skills>

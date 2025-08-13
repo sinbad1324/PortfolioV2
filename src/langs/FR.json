@@ -1,0 +1,42 @@
+{
+    "header": [
+        "Accueil",
+        "À propos",
+        "Compétences",
+        "Projets",
+        "Contact"
+    ],
+    "home": {
+        "paragraphes": [
+            "Hé, je suis Mohammad",
+            ["Développeur web", "intermédiaire"],
+            ["avec une expertise dans les technologies de pointe telles que", "et", "Je propose", "des solutions web à la fois innovantes et robustes"]
+        ]
+    },
+    "about": {
+        "paragraphes": [
+            "Je m'appelle <strong class='dark:text-d-accent-11 text-l-accent-11'>Izaspanah Mohammad</strong> et je suis passionné par la <strong class='dark:text-d-accent-11 text-l-accent-11'>programmation</strong>. Bien que mon expertise actuelle se <strong class='dark:text-d-accent-11 text-l-accent-11'>concentre</strong> sur <strong class='dark:text-d-accent-11 text-l-accent-11'>le développement web</strong>, je m'intéresse beaucoup à l'apprentissage automatique, un domaine dans lequel j'aspire à travailler à l'avenir.",
+            "Je suis actuellement étudiant en informatique avec une spécialisation en <strong class='dark:text-d-accent-11 text-l-accent-11'>programmation</strong> et j'ai déjà acquis deux ans d'expérience pratique dans le <strong class='dark:text-d-accent-11 text-l-accent-11'>développement web</strong>. Cette expérience m'a permis de <strong class='dark:text-d-accent-11 text-l-accent-11'>renforcer</strong> mes <strong class='dark:text-d-accent-11 text-l-accent-11'>compétences techniques</strong>, d'améliorer ma créativité et de développer une approche méthodique de la résolution de problèmes.",
+            "À seulement 18 ans, je suis une personne motivée, rapide et efficace dans mon travail. Je suis toujours prêt à relever de nouveaux défis, à apprendre et à m'améliorer afin de donner le meilleur de moi-même dans chaque projet auquel je participe."
+        ]
+    },
+    "Project": {
+        "list": [
+            {
+                "descripton": "SpriteSort est un site web qui organise automatiquement vos sprites par catégorie en grilles de 2x2, 4x4 ou 8x8. Vous pouvez également exporter vos images sous forme de fichier JSON pour vos jeux vidéo.",
+                "idee": "SpriteSort vous permet d'accélérer le développement de votre jeu ou la création d'effets visuels (VFX). Il classe toutes vos images dans les bons dossiers pour les retrouver plus facilement."
+            }
+        ],
+        "btn": "Voir le projet"
+    },
+    "contact": {
+        "paragraphes": {
+            "h3": "Prêt à donner vie à vos idées ?",
+            "p": "Contactez-moi via les <strong class='dark:text-d-accent-11 text-l-accent-11'>réseaux sociaux</strong> ou envoyez-moi un <strong class='dark:text-d-accent-11 text-l-accent-11'>e-mail</strong>.",
+            "btn": "Envoyer"
+        }
+    },
+    "footer": {
+        "text": "Conçu par <strong class='dark:text-white text-black'>Figma</strong> et codé par <strong class='dark:text-white text-black'>VSCode</strong>"
+    }
+}

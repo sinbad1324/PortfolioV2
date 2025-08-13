@@ -1,0 +1,42 @@
+{
+    "header": [
+        "Home",
+        "About",
+        "Skills",
+        "Projects",
+        "Contact"
+    ],
+    "home": {
+        "paragraphes": [
+            "Hey, I'm Mohammad",
+            ["Web Developer", "intermediate"],
+            ["with expertise in cutting-edge technologies such as", "and", "I offer", "web solutions that are both innovative and robust"]
+        ]
+    },
+    "about": {
+        "paragraphes": [
+            "My name is <strong class='dark:text-d-accent-11 text-l-accent-11'>Izaspanah Mohammad</strong> and I am passionate about <strong class='dark:text-d-accent-11 text-l-accent-11'>programming</strong>. While my current expertise is <strong class='dark:text-d-accent-11 text-l-accent-11'>focused</strong> on <strong class='dark:text-d-accent-11 text-l-accent-11'>web development</strong>, I am highly interested in machine learning, a field in which I aspire to work in the future.",
+            "I am currently a computer science student specializing in <strong class='dark:text-d-accent-11 text-l-accent-11'>programming</strong> and have already gained two years of hands-on experience in <strong class='dark:text-d-accent-11 text-l-accent-11'>web development</strong>. This experience has allowed me to <strong class='dark:text-d-accent-11 text-l-accent-11'>strengthen</strong> my <strong class='dark:text-d-accent-11 text-l-accent-11'>technical skills</strong>, improve my creativity, and develop a methodical approach to problem-solving.",
+            "At only 18 years old, I am a motivated, fast, and efficient person in my work. I am always ready to take on new challenges, learn, and improve to give my best in every project I take part in."
+        ]
+    },
+    "Project": {
+        "list": [
+            {
+                "descripton": "SpriteSort is a website that automatically organizes your sprites by category into 2x2, 4x4, or 8x8 grids. You can also export your images as a JSON file for your video games.",
+                "idee": "SpriteSort helps you speed up your game development or visual effects (VFX) creation. It organizes all your images into the right folders for easier access."
+            }
+        ],
+        "btn": "View Project"
+    },
+    "contact": {
+        "paragraphes": {
+            "h3": "Ready to bring your ideas to life?",
+            "p": "Contact me via <strong class='dark:text-d-accent-11 text-l-accent-11'>social media</strong> or send me an <strong class='dark:text-d-accent-11 text-l-accent-11'>email</strong>.",
+            "btn": "Send"
+        }
+    },
+    "footer": {
+        "text": "Designed with <strong class='dark:text-white text-black'>Figma</strong> and coded with <strong class='dark:text-white text-black'>VSCode</strong>"
+    }
+}

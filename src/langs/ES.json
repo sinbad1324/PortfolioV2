@@ -1,0 +1,42 @@
+{
+    "header": [
+        "Inicio",
+        "Acerca de",
+        "Habilidades",
+        "Proyectos",
+        "Contacto"
+    ],
+    "home": {
+        "paragraphes": [
+            "Hola, soy Mohammad",
+            ["Desarrollador web", "intermedio"],
+            ["con experiencia en tecnologías de vanguardia como", "y", "Ofrezco", "soluciones web innovadoras y robustas"]
+        ]
+    },
+    "about": {
+        "paragraphes": [
+            "Me llamo <strong class='dark:text-d-accent-11 text-l-accent-11'>Izaspanah Mohammad</strong> y me apasiona la <strong class='dark:text-d-accent-11 text-l-accent-11'>programación</strong>. Aunque mi experiencia actual se <strong class='dark:text-d-accent-11 text-l-accent-11'>centra</strong> en el <strong class='dark:text-d-accent-11 text-l-accent-11'>desarrollo web</strong>, me interesa mucho el aprendizaje automático, un campo en el que aspiro a trabajar en el futuro.",
+            "Actualmente estudio informática con especialización en <strong class='dark:text-d-accent-11 text-l-accent-11'>programación</strong> y ya tengo dos años de experiencia práctica en <strong class='dark:text-d-accent-11 text-l-accent-11'>desarrollo web</strong>. Esta experiencia me ha permitido <strong class='dark:text-d-accent-11 text-l-accent-11'>fortalecer</strong> mis <strong class='dark:text-d-accent-11 text-l-accent-11'>habilidades técnicas</strong>, mejorar mi creatividad y desarrollar un enfoque metódico para la resolución de problemas.",
+            "Con solo 18 años, soy una persona motivada, rápida y eficiente en mi trabajo. Siempre estoy listo para asumir nuevos desafíos, aprender y mejorar para dar lo mejor de mí en cada proyecto en el que participo."
+        ]
+    },
+    "Project": {
+        "list": [
+            {
+                "descripton": "SpriteSort es un sitio web que organiza automáticamente tus sprites por categoría en cuadrículas de 2x2, 4x4 o 8x8. También puedes exportar tus imágenes como un archivo JSON para tus videojuegos.",
+                "idee": "SpriteSort te permite acelerar el desarrollo de tu juego o la creación de efectos visuales (VFX). Clasifica todas tus imágenes en las carpetas correctas para que las encuentres más fácilmente."
+            }
+        ],
+        "btn": "Ver proyecto"
+    },
+    "contact": {
+        "paragraphes": {
+            "h3": "¿Listo para dar vida a tus ideas?",
+            "p": "Contáctame a través de las <strong class='dark:text-d-accent-11 text-l-accent-11'>redes sociales</strong> o envíame un <strong class='dark:text-d-accent-11 text-l-accent-11'>correo electrónico</strong>.",
+            "btn": "Enviar"
+        }
+    },
+    "footer": {
+        "text": "Diseñado con <strong class='dark:text-white text-black'>Figma</strong> y codificado con <strong class='dark:text-white text-black'>VSCode</strong>"
+    }
+}
