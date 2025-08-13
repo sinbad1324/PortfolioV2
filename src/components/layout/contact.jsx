@@ -36,20 +36,23 @@ export const Contact = ({ }) => {
                     <div className='flex w-full h-fit flex-col justify-start items-start gap-0.5'>
                         <label htmlFor="Email" className='text-xl  font-bold dark:text-d-accent-11 text-l-accent-11'>Message:</label>
                         <textarea type="text" id='Email' placeholder='Your email...' name='Email'
-                            className=' dark:placeholder-d-gray-12 placeholder-l-gray-12 w-full h-[250px]  outline-0 border-2 dark:border-d-accent-6 border-l-accent-7 dark:bg-d-gray-4 bg-l-gray-4 rounded-sm p-2 font-semibold dark:focus:bg-d-gray-5 dark:focus:border-d-accent-5 focus:bg-l-gray-5 focus:border-l-accent-5' />
+                            className=' min-h-[200px] max-h-[500px] dark:placeholder-d-gray-12 placeholder-l-gray-12 w-full h-[250px]  outline-0 border-2 dark:border-d-accent-6 border-l-accent-7 dark:bg-d-gray-4 bg-l-gray-4 rounded-sm p-2 font-semibold dark:focus:bg-d-gray-5 dark:focus:border-d-accent-5 focus:bg-l-gray-5 focus:border-l-accent-5' />
                     </div>
-                    <div className='w-full flex flex-row justify-between items-center'>
-                        <a href="mailto:mohammad@mohaizad.com" className='dark:text-d-accent-12 text-l-accent-12 underline'>mohammad@mohaizad.com</a>
+                    <div className='w-full flex flex-row justify-between items-center gap-2'>
+                        <div className='w-fit h-fit flex flex-row gap-1'>
+                            <MailIcon/>
+                            <a href="mailto:mohammad@mohaizad.com" className='dark:text-d-accent-12 text-l-accent-12 underline text-sm md:text-md'>mohammad@mohaizad.com</a>
+                        </div>
                         <PrimaryButton className="md:w-[120px]  w-[100px] font-light text-lg " >Send</PrimaryButton>
                     </div>
                 </form>
             </div>
         </div>
-         <div className='flex absolute top-0 left-0 w-full h-full z-0 backdrop-blur-xl bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5'></div>
+        <div className='flex absolute top-0 left-0 w-full h-full z-0 backdrop-blur-xl bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5'></div>
         <div className='flex absolute top-0 left-0 w-full h-full -z-10 '>
             <div ref={FormsContainer} className="  relative top-0 left-0 w-full h-full ">
                 {Array.from({ length: 25 }, (_, i) => {
-                    return <CreateForm  center={true} className="w-20 h-20 hover:scale-110 cursor-pointer contrast-200" getRef={FormsContainer} key={i} />;
+                    return <CreateForm center={true} className="w-20 h-20 hover:scale-110 cursor-pointer contrast-200" getRef={FormsContainer} key={i} />;
                 })}
             </div>
         </div>
@@ -57,4 +60,10 @@ export const Contact = ({ }) => {
             <Line></Line>
         </div>
     </section>
+}
+
+
+const MailIcon = () => {
+    const { theme } = useTheme();
+    return <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke={theme=="dark"?"#a4f0ef":"#174241"}  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
 }
